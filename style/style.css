@@ -1,0 +1,29 @@
+#container {
+	text-align: center;
+	margin: 0px;
+}
+
+button {
+	font-size: 60px;
+	border-style: none;
+	border: 5px, solid, #000;
+	background-color: #FFF;
+}
+
+a {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	font-size: 60px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+p {
+	margin-top: 200px;
+	text-align: center;
+	font-size: 100px;
+}

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<title>Which do you want?</title>
+	</head>
+
+	<body>
+		<div id="container">
+			<button id="main" onclick="Random();">Which do you want?</button>
+			<br/><br/><br/>
+			<img id="image1" src="" alt=""/>
+			<img id="image2" src="" alt=""/><br/>
+			<a id="ichi" href="#"></button>
+			
+			<a id="ni" href="#"></button>
+		</div>
+
+	</body>
+
+</html>
+
+
+
+<script>
+	function Random() {
+
+		var foods = ["Chicken", "Beef", "Pizza", "Ice Cream", "Cake",
+					"Carrots", "Onions", "Bananas", "Apples", "Strawberries",
+					"Lemons", "Curry", "a sandwich", "Grapes", "Eggs",
+					"a cookie", "Rice", "Bread", "Fish", "Soup"];
+
+
+		var a = Math.floor(Math.random() * 20);
+		var b = a;
+		while (a == b) {
+			if (a == b) {
+				b = Math.floor(Math.random() * 20);
+			}
+		}
+
+		var button1 = document.getElementById("ichi");
+		var button2 = document.getElementById("ni");
+
+		button1.innerHTML = foods[a] + " or  <br/>";
+		button2.innerHTML = foods[b];
+
+		button1.setAttribute("href", foods[a] + ".html");
+		button2.setAttribute("href", foods[a] + ".html");
+
+		var image1 = document.getElementById("image1");
+		var image2 = document.getElementById("image2");
+
+		image1.src = ("pictures/" + foods[a] + ".jpg");
+		image2.src = ("pictures/" + foods[b] + ".jpg");
+
+	}
+</script>
+
+
+
+
+
+
