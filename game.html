@@ -12,10 +12,8 @@
 			<img id="image1" src="" alt=""/>
 			<img id="image2" src="" alt=""/><br/>
 			<a id="ichi" href="#"></button>
-			
 			<a id="ni" href="#"></button>
 		</div>
-
 	</body>
 
 </html>
@@ -42,7 +40,7 @@
 		var button1 = document.getElementById("ichi");
 		var button2 = document.getElementById("ni");
 
-		button1.innerHTML = foods[a] + " or  <br/>";
+		button1.innerHTML = foods[a] + "&nbsp;or&nbsp;";
 		button2.innerHTML = foods[b];
 
 		button1.setAttribute("href", "main/" + foods[a] + ".html");
@@ -51,14 +49,8 @@
 		var image1 = document.getElementById("image1");
 		var image2 = document.getElementById("image2");
 
-		image1.src = ("pictures/" + foods[a] + ".jpg");
-		image2.src = ("pictures/" + foods[b] + ".jpg");
+		image1.src = ("pictures_rgb/" + foods[a] + "_rgb.jpg");
+		image2.src = ("pictures_rgb/" + foods[b] + "_rgb.jpg");
 
 	}
 </script>
-
-
-
-
-
-
